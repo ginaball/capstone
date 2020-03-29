@@ -86,7 +86,8 @@ video {
     font-size: 16px;
     font-weight: bold;
     padding: 10px;
-    border: none;
+    -webkit-appearance: none;
+    border-radius: 0;
 }
 
 .main-container .info-section {
