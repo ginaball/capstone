@@ -26,40 +26,22 @@ video {
     margin: 0 auto;
 }
 
-.nav-container .logo {
-    float: left;
-    width: 40px;
-    padding-left: 32px;
+.nav-container .nav-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
-.nav-container h2 {
+.nav-container .nav-icons .nav-icon img{
+    width: 45px;
+}
+
+.nav-container .nav-desktop {
     display: none;
 }
 
 .nav-container .company-name {
     color: #000000;
-}
-
-.nav-container .nav-links{
-    display: none;
-}
-
-.nav-container ul {
-    list-style: none;
-}
-
-.nav-container .nav-images{
-    float: right;
-    margin: 0 auto;
-}
-
-.nav-container .nav-images .nav-image {
-    display: inline;
-    padding: 22px;
-}
-
-.nav-images .nav-image img{
-    width: 45px;
 }
 
 .main-container .banner-content {
