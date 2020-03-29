@@ -19,6 +19,10 @@ video {
     width: 100%;
 }
 
+.quote {
+    font-style: italic;
+}
+
 /* header */
 
 .nav-container {
@@ -28,44 +32,92 @@ video {
     margin: 0 auto;
 }
 
-.nav-container .nav-icons {
+.nav-container .nav-items {
     display: flex;
     justify-content: space-around;
 }
 
-.nav-container .nav-icons .nav-icon {
+.nav-container .nav-items .nav-item {
     width: 45px;
 }
 
-.nav-container .nav-desktop {
+.nav-container .nav-items .nav-item.desktop {
     display: none;
 }
 
-.nav-container .company-name {
-    color: #000000;
+
+/* header desktop */
+
+@media (min-width: 550px) {
+    .nav-container {
+        padding-top: 0px;
+    }
+
+    .nav-container .nav-items {
+        display: flex;
+        justify-content: space-between;
+        margin-left: 24px;
+        margin-right: 24px;
+    }
+
+    .nav-container .nav-items .nav-item.mobile {
+        display: none;
+    }
+    .nav-container .nav-items .nav-item {
+        width: auto;
+    }
+
+    .nav-container .nav-items .nav-item .logo-wrapper {
+        display: inline-block;
+        width: 45px;
+        vertical-align: middle;
+    }
+
+    .nav-container .nav-items .nav-item.desktop {
+        display: inline;
+        width: auto;
+    }
+
+    .nav-container .nav-items .nav-item.desktop.company-name-wrapper {
+        display: inline-block;
+    }
+
+    .nav-container .nav-items .nav-item .company-name {
+        color: #000000;
+    }
+
+    .nav-container .nav-items .nav-item.desktop .nav-links {
+        list-style: none;
+        padding-top: 10px;
+    }
+
+    .nav-container .nav-items .nav-item.desktop .nav-links li{
+        display: inline;
+        padding-right: 16px;
+    }
 }
 
 /* banner section */
 
-.main-container .banner-content {
+.main-container .banner-items {
     background-color:#cccccc;
 }
 
-.main-container .banner-content .banner-text {
+.main-container .banner-items .banner-item.banner-text {
     padding: 32px 16px 32px 16px;
 }
 
-.main-container .banner-content .banner-text h3 {
+.main-container .banner-items .banner-item.banner-text h3 {
     padding-bottom: 32px;
     padding-bottom: 24px;
 }
 
-.main-container .banner-content .start-here {
+.main-container .banner-items .start-here {
     display: block;
     margin: 0 auto;
 }
-.main-container .banner-content button {
-    background-color:#999999;
+.main-container .banner-items button {
+    background-color:#666666;
     color: #ffffff;
     width: 90%;
     font-size: 100%;
@@ -73,6 +125,23 @@ video {
     padding: 10px;
     -webkit-appearance: none;
     border: none;
+}
+
+/* desktop banner section */
+
+@media (min-width: 550px) {
+    .main-container .banner-items {
+        display: flex;
+    }
+
+    .main-container .banner-items .banner-item {
+        margin: 32px 24px;
+    }
+
+    .main-container .banner-items .banner-item.banner-img {
+        width: 60%;
+    }
+
 }
 
 /* info section */
@@ -100,6 +169,47 @@ video {
     text-decoration: none;
 }
 
+/* deskptop info section */
+
+@media (min-width: 550px) {
+    .main-container .info-section {
+        display: flex;
+    }
+
+    .main-container .info-section .hero-info {
+        display: inline;
+        width: 60%;
+        padding: 32px 24px;
+        border-right: 1px #e6e6e6 solid;
+    }
+
+    .main-container .info-section .hero-info .quote-author{
+        padding-bottom: 16px;
+    }
+
+    .main-container .info-section .recent-info {
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+    }
+
+    .main-container .info-section .recent-info .info-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-bottom: 4px #e6e6e6 solid;
+    }
+
+    .main-container .info-section .recent-info .info-container .info-img {
+        width: 35%;
+        padding: 16px;
+    }
+
+    .main-container .info-section .recent-info .info-container .info-text {
+        width: 65%;
+    }
+}
+
 /* start learning */
 
 .main-container .start-learning h1 {
@@ -118,9 +228,6 @@ video {
     text-decoration: none;
     color: #404040;
 }
-.main-container .start-learning .course-cat-container a:hover {
-    background-color: #bfbfbf;
-}
 
 .main-container .start-learning .course-cat-container .course-category .course-name {
     padding: 16px;
@@ -137,6 +244,48 @@ video {
 .main-container .start-learning .course-cat-container .course-category .course-list {
     display: none;
 }
+
+
+/* desktop start learning */
+
+@media (min-width: 550px) {
+    .main-container .start-learning {
+        background-color: #e6e6e6;
+        padding-top: 32px;
+    }
+
+    .main-container .start-learning .course-cat-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-left: 42px;
+        margin-right: 42px;
+    }
+
+    .main-container .start-learning .course-cat-container .course-category {
+        background-color: #ffffff;
+        width: 31%;
+        margin-bottom: 32px;
+    }
+
+    .main-container .start-learning .course-cat-container .course-category .course-img {
+        display: inline;
+    }
+
+    .main-container .start-learning .course-cat-container .course-category .course-details {
+        margin-left: 16px;
+        padding-bottom: 24px;
+    }
+    
+    .main-container .start-learning .course-cat-container .course-category .courses-label {
+        display: inline;
+    }
+    
+    .main-container .start-learning .course-cat-container .course-category .course-list {
+        display: inline;
+    }
+}
+
 
 /* thesis exhibit section */
 
@@ -158,6 +307,47 @@ video {
     display: none;
 }
 
+/* desktop thesis exhibit section */
+
+@media (min-width: 550px) {
+    .main-container .thesis-exhibit .thesis-container {
+        display: flex;
+        margin-left: 32px;
+    }
+
+    .main-container .thesis-exhibit .thesis-container .thesis-hero {
+        width: 60%;
+        margin-right: 24px;
+    }
+
+    .main-container .thesis-exhibit .thesis-container .thesis-hero h2 {
+        display: block;
+    }
+    
+    .main-container .thesis-exhibit .thesis-container .thesis-hero p {
+        display: block;
+    }
+    
+    .main-container .thesis-exhibit .thesis-container .thesis-other {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main-container .thesis-exhibit .thesis-container .thesis-other .thesis-item {
+        display: flex;
+        align-items: center;
+    }
+
+    .main-container .thesis-exhibit .thesis-container .thesis-other .thesis-item .thesis-img {
+        width: 35%;
+        padding: 16px;
+    }
+
+    .main-container .thesis-exhibit .thesis-container .thesis-other .thesis-item .thesis-details {
+        width: 65%;
+    }
+}
+
 /* footer */
 
 .footer-container {
@@ -172,15 +362,23 @@ video {
     display: none;
 }
 
-/* desktop */
+/* desktop footer */
 
 @media (min-width: 550px) {
-    .nav-container .nav-images {
-        display: none;
-    }    
-
-    .nav-container h2 {
-        position: relative;
+    .footer-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: 24px;
+    }
+    
+    .footer-container .footer-links {
+        display: inline;
+        list-style: none;
     }
 
+    .footer-container .footer-links li {
+        display: inline;
+        padding-right: 10px;
+    }
 }

@@ -8,29 +8,32 @@
     </head>
     <body>
         <header class="nav-container">
-            <div class="nav-icons">
-                <div class="nav-icon"><img src="./images/ic-logo.svg" alt="logo"></div>
-                <div class="nav-icon"><img src="./images/ic-on-campus.svg" alt="campus icon"></div>
-                <div class="nav-icon"><img src="./images/ic-online.svg" alt="computer icon"></div>
-                <div class="nav-icon"><img src="./images/ic-login.svg" alt="login icon"></div>
-            </div>
-            <div class="nav-desktop">
-                <img src="./images/ic-logo.svg" alt="Colmar Acadamey logo" class="logo-desktop">
-                <h2><span class="company-name">COLMAR</span>ACADEMY</h2>
-                <ul class="nav-links">
-                    <li>On Campus</li>
-                    <li>Online</li>
-                    <li>For Companies</li>
-                    <li>Sign in</li>
-                </ul>
-            </div>
+            <div class="nav-items">
+                <div class="nav-item">
+                    <div class="logo-wrapper">
+                        <img src="./images/ic-logo.svg" alt="logo">
+                    </div>
+                    <div class="nav-item desktop company-name-wrapper"><h2><span class="company-name">COLMAR</span>ACADEMY</h2></div>
+                </div>
+                <div class="nav-item mobile"><img src="./images/ic-on-campus.svg" alt="campus icon"></div>
+                <div class="nav-item mobile"><img src="./images/ic-online.svg" alt="computer icon"></div>
+                <div class="nav-item mobile"><img src="./images/ic-login.svg" alt="login icon"></div>
+                <div class="nav-item desktop">
+                    <ul class="nav-links">
+                        <li>On Campus</li>
+                        <li>Online</li>
+                        <li>For Companies</li>
+                        <li>Sign in</li>
+                    </ul>
+                </div>
+            </div>   
         </header>
         <main class="main-container">
-            <div class="banner-content">
-                <div class="banner-img">
+            <div class="banner-items">
+                <div class="banner-item banner-img">
                     <img src="./images/banner.jpg" alt="Girls sitting at bench writing">
                 </div>
-                <div class="banner-text">
+                <div class="banner-item banner-text">
                     <h1>Learn something new every day</h1>
                     <h3>Join Colmar Academy to begin your learning adventure!</h3>
                     <button class="start-here">Start here</button>
@@ -41,7 +44,7 @@
                     <img src="./images/information-main.jpg" alt="African American man reading a book" class="hero-img">
                     <h1>It doesn't hurt to keep practicing</h1>
                     <p class="quote">"Don’t just teach your children to read. Teach them to question what they read. Teach them to question everything."</p>
-                    <p>– George Carlin</p>
+                    <p class="quote-author">– George Carlin</p>
                 </div>
                 <div class="recent-info">
                     <div class="info-container">
@@ -105,11 +108,13 @@
                         <div class="course-name">
                             <h2>Software Engineering</h2>
                         </div>
-                        <div class="courses-label">
-                            <p>COURSES</p>
-                        </div>
-                        <div class="course-list">
-                            <p>Web Development, Mobile Development, iOT, APIs</p>
+                        <div class="course-details">
+                            <div class="courses-label">
+                                    <p>COURSES</p>
+                                </div>
+                                <div class="course-list">
+                                    <p>Web Development, Mobile Development, iOT, APIs</p>
+                                </div>
                         </div>
                      </a>
                     <a class="course-category" href="#">
@@ -117,11 +122,13 @@
                             <div class="course-name">
                                 <h2>Computer Art</h2>
                             </div>
-                            <div class="courses-label">
-                                <p>COURSES</p>
-                            </div>
-                            <div class="course-list">
-                                <p>Imaging & Design, Web Design, Motion Graphics & Visual Effects, Computer Animation</p>
+                            <div class="course-details">
+                                <div class="courses-label">
+                                        <p>COURSES</p>
+                                    </div>
+                                    <div class="course-list">
+                                        <p>Imaging & Design, Web Design, Motion Graphics & Visual Effects, Computer Animation</p>
+                                </div>
                             </div>
                     </a>
                     <a class="course-category" href="#">
@@ -129,11 +136,13 @@
                             <div class="course-name">
                                 <h2>Design</h2>
                             </div>
-                            <div class="courses-label">
-                                <p>COURSES</p>
-                            </div>
-                            <div class="course-list">
-                                <p>User Experience Design, User Research, Visual Design</p>
+                            <div class="course-details">
+                                <div class="courses-label">
+                                        <p>COURSES</p>
+                                    </div>
+                                    <div class="course-list">
+                                        <p>User Experience Design, User Research, Visual Design</p>
+                                </div>
                             </div>
                     </a>
                     <a class="course-category" href="#">
@@ -141,11 +150,13 @@
                             <div class="course-name">
                                 <h2>Data</h2>
                             </div>
-                            <div class="courses-label">
-                                <p>COURSES</p>
-                            </div>
-                            <div class="course-list">
-                                <p>Data Science, Big Data, SQL, Data Visualization</p>
+                            <div class="course-details">
+                                <div class="courses-label">
+                                        <p>COURSES</p>
+                                    </div>
+                                    <div class="course-list">
+                                        <p>Data Science, Big Data, SQL, Data Visualization</p>
+                                </div>
                             </div>
                     </a>
                     <a class="course-category" href="#">
@@ -153,11 +164,13 @@
                             <div class="course-name">
                                 <h2>Business</h2>
                             </div>
-                            <div class="courses-label">
-                                <p>COURSES</p>
-                            </div>
-                            <div class="course-list">
-                                <p>Product Development, Business Development, Startup</p>
+                            <div class="course-details">
+                                <div class="courses-label">
+                                        <p>COURSES</p>
+                                    </div>
+                                    <div class="course-list">
+                                        <p>Product Development, Business Development, Startup</p>
+                                </div>
                             </div>
                     </a>
                     <a class="course-category" href="#">
@@ -165,43 +178,50 @@
                             <div class="course-name">
                                 <h2>Marketing</h2>
                             </div>
-                            <div class="courses-label">
-                                <p>COURSES</p>
-                            </div>
-                            <div class="course-list">
-                                <p>Anyalytics, Content Marketing, Mobile Marketing</p>
+                            <div class="course-details">
+                                <div class="courses-label">
+                                        <p>COURSES</p>
+                                    </div>
+                                    <div class="course-list">
+                                        <p>Anyalytics, Content Marketing, Mobile Marketing</p>
+                                </div>
                             </div>
                         </a>
                     </div>
                 </div>
             </div>
             <div class="thesis-exhibit">
-                <div class="thesis-hero">
-                    <h1>Thesis exhibits</h1>
-                    <div class="thesis-video">
-                        <video src="./videos/thesis.mp4" controls></video>
-                    </div>
-                    <h2>Reimaging urban</h2>
-                    <p class="quote">Cities were always like people, showing their varying personalities to the traveler. Depending on the city and on the traveler, there might begin a mutual love, or dislike, friendship, or enmity. Where one city will rise a certain individual to glory, it will destroy another who is not suited to its personality. Only through travel can we know where we belong or not, where we are loved and where we are rejected.</p>
-                </div>
-                <div class="thesis-other">
-                    <div class="first-thesis">
-                        <div class="thesis-image">
-                            <img src="./images/thesis-fisma.jpg" alt="desk with papers">
+                <h1>Thesis exhibits</h1>
+                <div class="thesis-container">
+                    <div class="thesis-hero">
+                        <div class="thesis-video">
+                            <video src="./videos/thesis.mp4" controls></video>
                         </div>
-                        <h2>Fisma: Design and Prototype</h2>
-                        <p>Designer showcase of new prototype product</p>
+                        <h2>Reimaging urban</h2>
+                        <p class="quote">"Cities were always like people, showing their varying personalities to the traveler. Depending on the city and on the traveler, there might begin a mutual love, or dislike, friendship, or enmity. Where one city will rise a certain individual to glory, it will destroy another who is not suited to its personality. Only through travel can we know where we belong or not, where we are loved and where we are rejected."</p>
                     </div>
-                    <div class="second-thesis">
-                        <div class="thesis-image">
-                                <img src="./images/thesis-now-and-then.jpg" alt="NYC Skyline">
+                    <div class="thesis-other">
+                        <div class="thesis-item">
+                            <div class="thesis-img">
+                                <img src="./images/thesis-fisma.jpg" alt="desk with papers">
                             </div>
-                            <h2>Now and then</h2>
-                            <p>Research study about New York</p>
+                            <div class="thesis-details">
+                                <h2>Fisma: Design and Prototype</h2>
+                                <p>Designer showcase of new prototype product</p>
+                            </div>
+                        </div>
+                        <div class="thesis-item">
+                            <div class="thesis-img">
+                                    <img src="./images/thesis-now-and-then.jpg" alt="NYC Skyline">
+                                </div>
+                                <div class="thesis-details">
+                                    <h2>Now and then</h2>
+                                    <p>Research study about New York</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
         </main>
         <footer class="footer-container">
             <p>&copy; 2016 Colmar Academy. All rights reserved</p>
