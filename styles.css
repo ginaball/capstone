@@ -1,0 +1,191 @@
+html {
+    font-family: 'Questrial', sans-serif;
+    color:  #404040;
+    font-size: 16px;
+}
+h1 {
+    line-height: 1.6;
+}
+
+h3 {
+    line-height: 1.6;
+}
+
+img {
+    width: 100%;
+}
+
+video {
+    width: 100%;
+}
+
+.nav-container {
+    width: 100%;
+    height: 64px;
+    padding-top: 25px;
+    margin: 0 auto;
+}
+
+.nav-container .logo {
+    float: left;
+    width: 40px;
+    padding-left: 32px;
+}
+
+.nav-container h2 {
+    display: none;
+}
+
+.nav-container .company-name {
+    color: #000000;
+}
+
+.nav-container .nav-links{
+    display: none;
+}
+
+.nav-container ul {
+    list-style: none;
+}
+
+.nav-container .nav-images{
+    float: right;
+    margin: 0 auto;
+}
+
+.nav-container .nav-images .nav-image {
+    display: inline;
+    padding: 22px;
+}
+
+.nav-images .nav-image img{
+    width: 45px;
+}
+
+.main-container .banner-content {
+    background-color:#cccccc;
+}
+
+.main-container .banner-content .banner-text {
+    padding: 32px 16px 32px 16px;
+}
+
+.main-container .banner-content .banner-text h3 {
+    padding-bottom: 32px;
+    padding-bottom: 24px;
+}
+
+.main-container .banner-content .start-here {
+    display: block;
+    margin: 0 auto;
+}
+.main-container .banner-content button {
+    background-color:#999999;
+    color: #ffffff;
+    width: 90%;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.main-container .info-section {
+    padding-top: 16px;
+}
+
+.main-container .info-section .hero-info {
+    display: none;
+}
+
+.main-container .info-section .info-container{
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.main-container .info-section .info-container .info-text {
+    padding-left: 16px;
+    padding-bottom: 32px;
+    padding-top: 16px;
+}
+
+.main-container .info-section .info-body .read-more {
+    text-decoration: none;
+}
+
+.main-container .start-learning h1 {
+    text-align: center;
+}
+
+.main-container .start-learning .course-cat-container {
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.main-container .start-learning .course-cat-container .course-category {
+    background-color: #cccccc;
+    margin-bottom: 8px;
+    display: block;
+    text-decoration: none;
+    color: #404040;
+}
+.main-container .start-learning .course-cat-container a:hover {
+    background-color: #bfbfbf;
+}
+
+.main-container .start-learning .course-cat-container .course-category .course-name {
+    padding: 16px;
+}
+
+.main-container .start-learning .course-cat-container .course-category .course-img {
+    display: none;
+}
+
+.main-container .start-learning .course-cat-container .course-category .courses-label {
+    display: none;
+}
+
+.main-container .start-learning .course-cat-container .course-category .course-list {
+    display: none;
+}
+
+.main-container .thesis-exhibit h1 {
+    text-align: center;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.main-container .thesis-exhibit .thesis-hero h2 {
+    display: none;
+}
+
+.main-container .thesis-exhibit .thesis-hero p {
+    display: none;
+}
+
+.main-container .thesis-exhibit .thesis-other {
+    display: none;
+}
+
+.footer-container {
+    padding-top: 24px;
+}
+.footer-container p{
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.footer-container .footer-links{
+    display: none;
+}
+
+/* desktop */
+
+@media (min-width: 550px) {
+    .nav-container .nav-images {
+        display: none;
+    }    
+
+    .nav-container h2 {
+        position: relative;
+    }
+
+}
