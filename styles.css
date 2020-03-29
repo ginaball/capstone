@@ -132,6 +132,7 @@ video {
 @media (min-width: 550px) {
     .main-container .banner-items {
         display: flex;
+        align-items: center;
     }
 
     .main-container .banner-items .banner-item {
