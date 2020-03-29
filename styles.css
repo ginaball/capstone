@@ -19,6 +19,8 @@ video {
     width: 100%;
 }
 
+/* header */
+
 .nav-container {
     width: 100%;
     height: 64px;
@@ -32,7 +34,7 @@ video {
     justify-content: space-around;
 }
 
-.nav-container .nav-icons .nav-icon img{
+.nav-container .nav-icons .nav-icon {
     width: 45px;
 }
 
@@ -43,6 +45,8 @@ video {
 .nav-container .company-name {
     color: #000000;
 }
+
+/* banner section */
 
 .main-container .banner-content {
     background-color:#cccccc;
@@ -72,6 +76,8 @@ video {
     border-radius: 0;
 }
 
+/* info section */
+
 .main-container .info-section {
     padding-top: 16px;
 }
@@ -94,6 +100,8 @@ video {
 .main-container .info-section .info-body .read-more {
     text-decoration: none;
 }
+
+/* start learning */
 
 .main-container .start-learning h1 {
     text-align: center;
@@ -131,6 +139,8 @@ video {
     display: none;
 }
 
+/* thesis exhibit section */
+
 .main-container .thesis-exhibit h1 {
     text-align: center;
     padding-top: 16px;
@@ -148,6 +158,8 @@ video {
 .main-container .thesis-exhibit .thesis-other {
     display: none;
 }
+
+/* footer */
 
 .footer-container {
     padding-top: 24px;
